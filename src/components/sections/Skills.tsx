@@ -1,11 +1,13 @@
+"use client";
 import { 
   Code2, 
   Figma, 
   Palette, 
-  Smartphone, 
   Globe, 
   Database 
 } from 'lucide-react';
+import { Section } from '@/components/ui/section';
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillCategories = [
@@ -15,43 +17,41 @@ const Skills = () => {
       skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML5/CSS3']
     },
     {
-      title: 'Design Tools',
-      icon: <Figma size={40} />,
-      skills: ['Figma', 'Adobe XD', 'Sketch', 'Photoshop', 'Illustrator', 'InVision']
-    },
-    {
       title: 'UI/UX Design',
       icon: <Palette size={40} />,
-      skills: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems', 'Usability Testing']
-    },
-    {
-      title: 'Mobile Development',
-      icon: <Smartphone size={40} />,
-      skills: ['React Native', 'Flutter', 'iOS Design', 'Android Design', 'Mobile UX']
+      skills: ['User Research', 'Wireframing', 'Design Systems', 'Usability Testing']
     },
     {
       title: 'Web Technologies',
       icon: <Globe size={40} />,
-      skills: ['Node.js', 'GraphQL', 'REST APIs', 'Progressive Web Apps', 'SEO Optimization']
+      skills: ['Node.js', 'REST APIs', 'SEO Optimization']
     },
     {
       title: 'Backend & Database',
       icon: <Database size={40} />,
-      skills: ['MongoDB', 'PostgreSQL', 'Firebase', 'Supabase', 'AWS', 'Vercel']
+      skills: ['MongoDB', 'Firebase', 'Vercel']
     }
   ];
 
   const techStack = [
-    { name: 'React', level: 99 },
-    { name: 'TypeScript', level: 95 },
-    { name: 'Figma', level: 98 },
+    { name: 'React', level: 80 },
+    { name: 'JavaScript', level: 80 },
+    { name: 'TypeScript', level: 70 },
     { name: 'Tailwind CSS', level: 97 },
-    { name: 'Node.js', level: 85 },
-    { name: 'UX Research', level: 95 }
+    { name: 'Figma', level: 75 },
+    { name: 'GSAP', level: 60 },
+    { name: 'Framer Motion', level: 60 },
+    { name: 'Three.Js', level: 50 },
+    { name: 'React Three Fiber', level: 50 },
+    { name: 'Socket Io', level: 50 },
+    { name: 'Restful APIs', level: 50 },
+    { name: 'Express', level: 50 },
+    { name: 'Node.js', level: 60 },
+    { name: 'Git & Github', level: 50 }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-surface-elevated">
+    <Section id="skills" className="py-20 bg-surface-elevated">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -103,18 +103,21 @@ const Skills = () => {
                   <span className="text-foreground font-medium">{tech.name}</span>
                   <span className="text-primary font-bold">{tech.level}%</span>
                 </div>
-                <div className="w-full bg-muted rounded-full h-2">
-                  <div 
-                    className="bg-gradient-to-r from-primary to-accent h-2 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${tech.level}%` }}
-                  ></div>
+                <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                  <motion.div
+                    className="bg-gradient-to-r from-primary to-accent h-2 rounded-full"
+                    initial={{ width: "0%" }}
+                    whileInView={{ width: `${tech.level}%` }}
+                    viewport={{ once: true, amount: 0.3 }} 
+                    transition={{ duration: 1.5, ease: "easeOut", delay: index * 0.1 }}
+                  />
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

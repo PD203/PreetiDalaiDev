@@ -1,20 +1,20 @@
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/profile-side.jpg';
+import { Section } from '@/components/ui/section';
 
 const About = () => {
   const personalInfo = [
-    { label: 'Birthday', value: '02.08.1988' },
-    { label: 'Age', value: '34' },
-    { label: 'Nationality', value: 'Spanish' },
-    { label: 'Study', value: 'University of Washington' },
-    { label: 'Degree', value: 'Master' },
+    { label: 'Birthday', value: '20.10.2003' },
+    { label: 'Age', value: '22' },
+    { label: 'Nationality', value: 'Indian' },
+    { label: 'Study', value: 'computer science' },
+    { label: 'Degree', value: 'Bachelor of Computer Applications' },
     { label: 'Freelance', value: 'Available' },
-    { label: 'Email', value: 'hola@bever.com' },
-    { label: 'Phone', value: '1-578-156-9845' },
-    { label: 'Address', value: '4273 Hermiston Hills, Palau' }
+    { label: 'Email', value: 'preetidalai940@gmail.com' },
+    { label: 'Address', value: 'Delhi, Indian' }
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <Section id="about" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -27,27 +27,23 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">RAYAN BEVER</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">PREETI DALAI</h3>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              UX/UI DESIGNER
+              FRONTEND DEVELOPER 
             </p>
-            
+
             <div className="space-y-4 mb-8">
               <p className="text-muted-foreground leading-relaxed">
-                Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan justo, quis tempor ligula. 
-                Quisque quis pharetra felis. Ut quis consequat orci, at consequat felis. Suspendisse auctor 
-                laoreet placerat.
+              Hi, I’m Preeti Dalai — a Frontend Developer and UI Designer from Delhi, India. I craft clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, React, and Tailwind CSS, turning ideas into intuitive digital experiences.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Nam et risus non lacus dignissim lacinia sit amet nec eros. Nulla vel urna quis libero 
-                pharetra varius. Nulla tellus nunc, malesuada at scelerisque eget, cursus at eros.
+              My strength lies in writing maintainable code, designing intuitive interfaces, and delivering fast, engaging solutions that drive business growth. While AI is reshaping frontend development and UI design, I leverage it smartly—using AI tools to accelerate workflows, refine ideas, and enhance efficiency. More importantly, I fine-tune and correct AI-generated code to align perfectly with client needs, ensuring precision and customization.
               </p>
+
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus. Donec pharetra faucibus leo, 
-              vitae vestibulum leo scelerisque eu. Nam enim dolor, porta at ex ut, eleifend tristique metus. 
-              Integer sit amet auctor ligula, vel dictum orci.
+            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Ready to collaborate on something extraordinary? Let’s build it together! "keep it same but my work is also for hr manager who is looking to hire
             </p>
 
             {/* Personal Info Grid */}
@@ -68,9 +64,9 @@ const About = () => {
             <div className="relative">
               <div className="w-96 h-96 bg-accent rounded-full p-3">
                 <div className="w-full h-full rounded-full overflow-hidden bg-surface-elevated">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Rayan Bever - About" 
+                  <img
+                    src={profilePhoto}
+                    alt="Preeti Dalai - About"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -81,7 +77,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

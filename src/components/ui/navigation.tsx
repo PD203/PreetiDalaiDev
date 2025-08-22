@@ -17,6 +17,8 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHomePage = location.pathname === '/';
+
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -26,16 +28,16 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-surface-elevated/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      (scrolled || !isHomePage) ? 'bg-surface-elevated/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-accent text-foreground rounded-md flex items-center justify-center font-bold text-lg">
-              R
+              P
             </div>
-            <span className="text-xl font-bold text-foreground">RAYAN</span>
+            <span className="text-xl font-bold text-foreground">PREETI</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,16 +46,21 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === item.href
-                    ? 'text-primary'
-                    : 'text-muted-foreground'
+                className={`text-sm font-medium transition-colors ${(!scrolled && isHomePage) ? 'hover:text-black' : 'hover:text-primary'} ${
+                  (scrolled || !isHomePage)
+                    ? (location.pathname === item.href ? 'text-primary' : 'text-muted-foreground')
+                    : (item.name === 'Home' ? 'text-accent' : 'text-secondary')
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" asChild>
+            <Button
+              variant="default"
+              size="sm"
+              className={(!scrolled && isHomePage) ? 'bg-secondary text-foreground hover:bg-secondary/90' : ''}
+              asChild
+            >
               <Link to="/contact">Get In Touch</Link>
             </Button>
           </div>

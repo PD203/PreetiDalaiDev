@@ -6,14 +6,14 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-10">
         {/* Hero Section */}
         <section className="py-20 bg-primary text-text-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-bold mb-6">CONTACT ME</h1>
+            <h1 className="text-5xl font-bold mb-6">GET IN TOUCH</h1>
             <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
             <p className="text-xl text-text-light/90 max-w-2xl mx-auto">
-              Have a great idea? Let's talk about your project
+            If you’re looking for someone reliable who cares about both design and execution, let’s collaborate and create something impactful.
             </p>
           </div>
         </section>

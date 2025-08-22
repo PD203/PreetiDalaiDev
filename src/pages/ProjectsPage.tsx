@@ -1,12 +1,13 @@
 import Navigation from '@/components/ui/navigation';
-import Projects from '@/components/sections/Projects';
+import { projects } from '@/lib/project-data';
+import ProjectCard from '@/components/ui/ProjectCard';
 import Footer from '@/components/sections/Footer';
 
 const ProjectsPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-10">
         {/* Hero Section */}
         <section className="py-20 bg-primary text-text-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -16,23 +17,29 @@ const ProjectsPage = () => {
               CREATIVE. PROFESSIONAL. ETHICAL.
             </p>
             <p className="text-lg text-text-light/80 max-w-3xl mx-auto mt-6">
-              Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero, velit. Nullam et maximus lorem. 
-              Suspendisse maximus dolor quis consequat volutpat. Donec vehicula elit eu erat pulvinar, vel congue ex 
-              egestas. Praesent egestas purus dolor.
+              Each project reflects my journey of blending creativity with technology.
             </p>
           </div>
         </section>
 
-        <Projects />
+        <section id="projects" className="py-20 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Services Section */}
         <section className="py-20 bg-surface-elevated">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center mb-16">
               <h2 className="text-4xl font-bold text-foreground">MY SERVICES</h2>
-              <button className="text-primary hover:text-accent transition-colors font-medium">
+              {/* <button className="text-primary hover:text-accent transition-colors font-medium">
                 VIEW ALL
-              </button>
+              </button> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -40,10 +47,9 @@ const ProjectsPage = () => {
                 <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mx-auto mb-6">
                   <div className="text-3xl font-bold text-primary">01</div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">UX DESIGN</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4">Frontend Development</h3>
                 <p className="text-muted-foreground">
-                  Etiam facilisis ligula nec velit posuere egestas. Nunc dictum lectus smell 
-                  dignissim purus luctus quis.
+                  Scalable, high-performing web solutions tailored to your business needs.
                 </p>
               </div>
 
@@ -51,24 +57,15 @@ const ProjectsPage = () => {
                 <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mx-auto mb-6">
                   <div className="text-3xl font-bold text-primary">02</div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">UI DESIGN</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4">UI/UX Design</h3>
                 <p className="text-muted-foreground">
-                  Etiam facilisis ligula nec velit posuere egestas. Nunc dictum lectus smell 
-                  dignissim purus luctus quis.
+                  User-friendly, professional interfaces that enhance customer engagement.
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mx-auto mb-6">
-                  <div className="text-3xl font-bold text-primary">03</div>
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">GRAPHIC DESIGN</h3>
-                <p className="text-muted-foreground">
-                  Etiam facilisis ligula nec velit posuere egestas. Nunc dictum lectus smell 
-                  dignissim purus luctus quis.
-                </p>
-              </div>
+              
             </div>
+
           </div>
         </section>
       </main>

@@ -25,31 +25,10 @@ const AboutPage = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-8">Education</h3>
                 <div className="space-y-8">
                   <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2010-2012</div>
+                    <div className="flex-shrink-0 w-16 text-primary font-bold">2021-2024</div>
                     <div>
-                      <h4 className="text-lg font-bold text-foreground">University of Washington – Seattle</h4>
-                      <p className="text-muted-foreground">BA in digital arts and design.</p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2012</div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground">UW Study Abroad – Lille, France</h4>
-                      <p className="text-muted-foreground">ABC Program: Arts & Innovation.</p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2013</div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground">Visual Design Intern – Better Organics</h4>
-                      <p className="text-muted-foreground">Designed product packaging, online campaigns, etc.</p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2014</div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground">Design Researcher – University of San Diego</h4>
-                      <p className="text-muted-foreground">Member of directed research group.</p>
+                      <h4 className="text-lg font-bold text-foreground">Bachelor of Computer Applications</h4>
+                      <p className="text-muted-foreground">Govt. Lahiri PG College, Chirmiri, Chhattisgarh</p>
                     </div>
                   </div>
                 </div>
@@ -60,31 +39,17 @@ const AboutPage = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-8">Experience</h3>
                 <div className="space-y-8">
                   <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2015-2016</div>
+                    <div className="flex-shrink-0 w-16 text-primary font-bold">June 2025-Present</div>
                     <div>
-                      <h4 className="text-lg font-bold text-foreground">UX/Visual Designer – Intuit, San Diego</h4>
-                      <p className="text-muted-foreground">Designed useful and elegant digital experiences across two different mobile platforms.</p>
+                      <h4 className="text-lg font-bold text-foreground">Frontend Developer (Contributor) – Lugo</h4>
+                      <p className="text-muted-foreground">Developed 10+ responsive web pages by translating Figma designs into functional components using Next.js and Tailwind CSS, and integrated RESTful APIs with the backend team.</p>
                     </div>
                   </div>
                   <div className="flex space-x-4">
                     <div className="flex-shrink-0 w-16 text-primary font-bold">2016-2018</div>
                     <div>
-                      <h4 className="text-lg font-bold text-foreground">Senior UX Designer – Intuit, LA</h4>
-                      <p className="text-muted-foreground">Designed and launched multi-platform desktop community homepage focused on tax professionals across the country.</p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2019-2021</div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground">UX Designer – IBM, LA</h4>
-                      <p className="text-muted-foreground">Collaborated with researchers, engineers and product managers throughout design process – from creating research protocols, personas, scenarios, information architecture and wireframes to building user interface prototypes.</p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2021-Present</div>
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground">UX/UI Designer – IBM, Marco-en-Barœul</h4>
-                      <p className="text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut placerat quam lectus. Curabitur dictum velit non lacus ornare tempor.</p>
+                      <h4 className="text-lg font-bold text-foreground">Web Development Volunteer – Chatrapur Women’s Degree College</h4>
+                      <p className="text-muted-foreground">Maintained and updated the college website by uploading images, PDFs, and new content, while enhancing presentation using HTML/CSS in cPanel.</p>
                     </div>
                   </div>
                 </div>
