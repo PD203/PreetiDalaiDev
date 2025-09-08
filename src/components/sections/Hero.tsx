@@ -2,6 +2,7 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profilePhoto from '@/assets/profile-front.jpg';
 import { motion } from 'framer-motion';
+import Resume from "@/assets/Preeti Dalai resume.pdf"
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -72,7 +73,7 @@ const Hero = () => {
                 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               >
                 <a
-                  // href={resumeFile}
+                  href={Resume}
                   download="Preeti_Dalai_Resume.pdf"
                   className="w-full sm:w-auto"
                 >

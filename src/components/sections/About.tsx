@@ -3,14 +3,14 @@ import { Section } from '@/components/ui/section';
 
 const About = () => {
   const personalInfo = [
-    { label: 'Birthday', value: '20.10.2003' },
+    { label: 'Birthday', value: '20 October 2003' },
     { label: 'Age', value: '22' },
     { label: 'Nationality', value: 'Indian' },
-    { label: 'Study', value: 'computer science' },
+    { label: 'Field of Study', value: 'computer science' },
     { label: 'Degree', value: 'Bachelor of Computer Applications' },
     { label: 'Freelance', value: 'Available' },
     { label: 'Email', value: 'preetidalai940@gmail.com' },
-    { label: 'Address', value: 'Delhi, Indian' }
+    { label: 'Address', value: 'Delhi, India' }
   ];
 
   return (
@@ -43,7 +43,7 @@ const About = () => {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Ready to collaborate on something extraordinary? Let’s build it together! "keep it same but my work is also for hr manager who is looking to hire
+            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Ready to collaborate on something extraordinary? Let’s build it together!
             </p>
 
             {/* Personal Info Grid */}

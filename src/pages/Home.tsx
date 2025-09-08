@@ -12,9 +12,9 @@ const Home = () => {
       <Navigation />
       <main>
         <Hero />
+        <Projects />
         <About />
         <Skills />
-        <Projects />
         <Contact />
       </main>
       <Footer />
