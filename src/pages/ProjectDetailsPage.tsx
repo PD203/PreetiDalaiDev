@@ -127,7 +127,7 @@ const ProjectDetailsPage = () => {
                 {/* Header */}
                 <div>
                   <Badge variant="secondary" className="mb-4">
-                    {project.category}
+                    {Array.isArray(project.category) ? project.category.join(', ') : project.category}
                   </Badge>
                   <h1 className="text-4xl font-bold text-foreground mb-4">
                     {project.title}
@@ -174,26 +174,42 @@ const ProjectDetailsPage = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-4 pt-4">
-                  <Button asChild size="lg">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink size={20} className="mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="lg" asChild>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github size={20} className="mr-2" />
-                      GitHub
-                    </a>
-                  </Button>
+                  {project.demoUrl && (
+                    <Button asChild size="lg">
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink size={20} className="mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
+                  {project.githubUrl && (
+                    <Button variant="outline" size="lg" asChild>
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github size={20} className="mr-2" />
+                        GitHub
+                      </a>
+                    </Button>
+                  )}
+                  {project.figma && (
+                    <Button variant="outline" size="lg" asChild>
+                      <a
+                        href={project.figma}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink size={20} className="mr-2" />
+                        Figma
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

@@ -19,6 +19,14 @@ import project3img2 from '@/assets/project3/p3(2).jpg';
 import project3img3 from '@/assets/project3/p3(3).jpg';
 import project3img4 from '@/assets/project3/p3(4).jpg';
 
+import project4img1 from '@/assets/project4/project-4.png';
+import project4img2 from '@/assets/project4/p4(2).png';
+import project4img3 from '@/assets/project4/p4(3).png';
+import project4img4 from '@/assets/project4/p4(4).png';
+import project4img5 from '@/assets/project4/p4(5).png';
+import project4img6 from '@/assets/project4/p4(6).png';
+import project4video from '@/assets/project4/mancare.mov';
+
 export const projects = [
     {
       id: 1,
@@ -53,11 +61,26 @@ export const projects = [
       
       The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
       images: [project3img1, project3img2, project3img3, project3img4],
-      tags: ['Next.js', 'Framer Motion', 'SCSS', 'Vercel'],
+      tags: ['Figma'],
       keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
-      demoUrl: 'https://www.figma.com/design/ZEIAG073ARBlVzUSn3uk83/Untitled?node-id=0-1&p=f&t=Nf6G5uMDACbGcXpr-0',
-      githubUrl: '#',
+      figma: 'https://www.figma.com/design/ZEIAG073ARBlVzUSn3uk83/Untitled?node-id=0-1&p=f&t=Nf6G5uMDACbGcXpr-0',
+      
       category: 'Web Design'
+    },
+    {
+      id: 4,
+      title: 'Candle Bussiness - landing page',
+      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
+      
+      The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
+      images: [project4img1, project4img2, project4img3, project4img4, project4img5, project4img6],
+      video: project4video,
+      tags: ['React.js', 'Tailwind CSS', 'Figma', 'Typescript'],
+      keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
+      demoUrl: 'https://mancare-ecom-ui.vercel.app/',
+      figma: 'https://www.figma.com/design/WnToaOoZpRJLYFQ5Gs4R2N/unnamed?node-id=0-1&t=xDpSnyu66mP0JB4O-1',
+      githubUrl: 'https://github.com/PD203/Mancare-ecom-ui.git',
+      category: ['Web Development, ', 'Web Design']
     },
    
   ];

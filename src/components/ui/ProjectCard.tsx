@@ -1,20 +1,8 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Figma } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Link, useNavigate } from 'react-router-dom';
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  images: string[];
-  video?: string;
-  tags: string[];
-  keyFeatures: string[];
-  demoUrl: string;
-  githubUrl: string;
-  category: string;
-}
+import { useNavigate } from 'react-router-dom';
+import { type Project } from '@/lib/project-data';
 
 interface ProjectCardProps {
   project: Project;
@@ -22,6 +10,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const navigate = useNavigate();
+
+  const hasAnyLink = project.demoUrl || project.githubUrl || project.figma;
 
   return (
     <Card
@@ -37,25 +27,39 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
         />
 
-        {/* Gradient Overlay with Buttons */}
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent 
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 gap-2"
-          onClick={(e) => e.stopPropagation()} // Prevent card click when clicking buttons
-        >
-          <Button asChild size="sm" variant="secondary" className="flex-1">
-            <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink size={16} className="mr-1" />
-              Demo
-            </a>
-          </Button>
-          <Button asChild size="sm" variant="outline" className="flex-1">
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              <Github size={16} className="mr-1" />
-              Code
-            </a>
-          </Button>
-        </div>
+        {/* Buttons (only if links exist) */}
+        {hasAnyLink && (
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent 
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 gap-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {project.figma && (
+              <Button asChild size="sm" variant="secondary" className="flex-1">
+                <a href={project.figma} target="_blank" rel="noopener noreferrer">
+                  <Figma size={16} className="mr-1" />
+                  Figma
+                </a>
+              </Button>
+            )}
+            {project.demoUrl && (
+              <Button asChild size="sm" variant="secondary" className="flex-1">
+                <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink size={16} className="mr-1" />
+                  Demo
+                </a>
+              </Button>
+            )}
+            {project.githubUrl && (
+              <Button asChild size="sm" variant="outline" className="flex-1">
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Github size={16} className="mr-1" />
+                  Code
+                </a>
+              </Button>
+            )}
+          </div>
+        )}
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
@@ -65,7 +69,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
       </div>
 
-      {/* Card Content (navigates to project/{id}) */}
+      {/* Card Content */}
       <CardHeader>
         <CardTitle className="text-foreground group-hover:text-primary transition-colors">
           {project.title}
