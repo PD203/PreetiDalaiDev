@@ -69,14 +69,12 @@ export const projects = [
     },
     {
       id: 4,
-      title: 'Candle Bussiness - landing page',
-      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
-      
-      The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
+      title: 'Mancare - E-commerce UI',
+      description: `My goal was to demonstrate advanced front-end capabilities and a focus on premium user experience.`,
       images: [project4img1, project4img2, project4img3, project4img4, project4img5, project4img6],
       video: project4video,
       tags: ['React.js', 'Tailwind CSS', 'Figma', 'Typescript'],
-      keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
+      keyFeatures: ['Premium Design', 'Minimalist Typography', 'High-Quality Imagery', 'Premium User Experience'],
       demoUrl: 'https://mancare-ecom-ui.vercel.app/',
       figma: 'https://www.figma.com/design/WnToaOoZpRJLYFQ5Gs4R2N/unnamed?node-id=0-1&t=xDpSnyu66mP0JB4O-1',
       githubUrl: 'https://github.com/PD203/Mancare-ecom-ui.git',
