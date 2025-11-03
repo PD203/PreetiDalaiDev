@@ -2,7 +2,7 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profilePhoto from '@/assets/profile-front.jpg';
 import { motion } from 'framer-motion';
-import Resume from "@/assets/Preeti Dalai resume.pdf"
+import Resume from "@/assets/PreetiDalai_resume.pdf";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
