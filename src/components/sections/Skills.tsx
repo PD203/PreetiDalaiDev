@@ -19,12 +19,12 @@ const Skills = () => {
     {
       title: 'UI/UX Design',
       icon: <Palette size={40} />,
-      skills: ['User Research', 'Wireframing', 'Design Systems', 'Usability Testing']
+      skills: ['Wireframing', 'Design Systems']
     },
     {
       title: 'Web Technologies',
       icon: <Globe size={40} />,
-      skills: ['Node.js', 'REST APIs', 'SEO Optimization']
+      skills: ['Node.js', 'REST APIs']
     },
     {
       title: 'Backend & Database',
