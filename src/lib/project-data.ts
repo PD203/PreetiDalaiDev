@@ -27,6 +27,12 @@ import project4img5 from '@/assets/project4/p4(5).png';
 import project4img6 from '@/assets/project4/p4(6).png';
 import project4video from '@/assets/project4/mancare.mov';
 
+import project5img1 from '@/assets/project5/project-5.jpg';
+import project5img2 from '@/assets/project5/p5(2).jpg';
+import project5img3 from '@/assets/project5/p5(3).jpg';
+import project5img4 from '@/assets/project5/p5(4).jpg';
+import project5img5 from '@/assets/project5/p5(5).jpg';
+
 export const projects = [
     {
       id: 1,
@@ -56,7 +62,7 @@ export const projects = [
     },
     {
       id: 3,
-      title: 'Candle Bussiness - landing page',
+      title: 'Candle Business - landing page',
       description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
       
       The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
@@ -80,5 +86,17 @@ export const projects = [
       githubUrl: 'https://github.com/PD203/Mancare-ecom-ui.git',
       category: ['Web Development, ', 'Web Design']
     },
-   
+    {
+      id: 5,
+      title: 'Furniture Business - Product page',
+      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of Furniture. 
+      
+      The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
+      images: [project5img1, project5img2, project5img3, project5img4, project5img5],
+      tags: ['Figma'],
+      keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
+      figma: 'https://www.figma.com/design/6R79wQNPIkDRYJX7KOx3Fd/OUR-PROJECT-1?node-id=285-3&t=z27xg5ugqmBW5vhu-1',
+      
+      category: 'Web Design'
+    }
   ];
