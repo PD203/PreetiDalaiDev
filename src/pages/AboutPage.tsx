@@ -39,16 +39,16 @@ const AboutPage = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-8">Experience</h3>
                 <div className="space-y-8">
                   <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">June 2025-Present</div>
+                    <div className="flex-shrink-0 w-16 text-primary font-bold">June 2025- October 2025</div>
                     <div>
-                      <h4 className="text-lg font-bold text-foreground">Frontend Developer (Contributor) – Lugo</h4>
+                      <h4 className="text-lg font-bold text-foreground">Freelance Frontend Developer – Lugo</h4>
                       <p className="text-muted-foreground">Developed 10+ responsive web pages by translating Figma designs into functional components using Next.js and Tailwind CSS, and integrated RESTful APIs with the backend team.</p>
                     </div>
                   </div>
                   <div className="flex space-x-4">
-                    <div className="flex-shrink-0 w-16 text-primary font-bold">2016-2018</div>
+                    <div className="flex-shrink-0 w-16 text-primary font-bold">Feb 2025</div>
                     <div>
-                      <h4 className="text-lg font-bold text-foreground">Web Development Volunteer – Chatrapur Women’s Degree College</h4>
+                      <h4 className="text-lg font-bold text-foreground">Freelancer – Chatrapur Women’s Degree College</h4>
                       <p className="text-muted-foreground">Maintained and updated the college website by uploading images, PDFs, and new content, while enhancing presentation using HTML/CSS in cPanel.</p>
                     </div>
                   </div>

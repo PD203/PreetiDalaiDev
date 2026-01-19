@@ -10,7 +10,7 @@ const About = () => {
     { label: 'Degree', value: 'Bachelor of Computer Applications' },
     { label: 'Freelance', value: 'Available' },
     { label: 'Email', value: 'preetidalai940@gmail.com' },
-    { label: 'Address', value: 'Delhi, India' }
+    { label: 'Address', value: 'Raipur, India' }
   ];
 
   return (
