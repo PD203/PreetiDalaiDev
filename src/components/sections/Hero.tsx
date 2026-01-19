@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/profile-front.jpg';
+import profilePhoto from '@/assets/profile-front.jpeg';
 import { motion } from 'framer-motion';
 import Resume from "@/assets/PreetiDalai_resume.pdf";
 

@@ -34,7 +34,7 @@ const About = () => {
 
             <div className="space-y-4 mb-8">
               <p className="text-muted-foreground leading-relaxed">
-              Hi, I am Preeti Dalai. I am a Frontend Developer and UI/UX Designer with hands-on experience building responsive, user-friendly websites and web applications.
+              Hi, My name is Preeti Dalai. I am a Frontend Developer and UI/UX Designer with hands-on experience building responsive, user-friendly websites and web applications.
 
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -44,7 +44,7 @@ const About = () => {
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Let’s build it together!
+            Let’s build something great together!
             </p>
 
             {/* Personal Info Grid */}
