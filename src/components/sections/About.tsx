@@ -1,4 +1,4 @@
-import profilePhoto from '@/assets/profile-side.jpg';
+import profilePhoto from '@/assets/profile-side.jpeg';
 import { Section } from '@/components/ui/section';
 
 const About = () => {
@@ -28,22 +28,23 @@ const About = () => {
           {/* Content */}
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-6">PREETI DALAI</h3>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              FRONTEND DEVELOPER 
+            <p className="text-lg text-primary font-semibold mb-6 leading-relaxed">
+              FRONTEND DEVELOPER & UI/UX DESIGNER
             </p>
 
             <div className="space-y-4 mb-8">
               <p className="text-muted-foreground leading-relaxed">
-              Hi, I’m Preeti Dalai — a Frontend Developer and UI Designer from Delhi, India. I craft clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, React, and Tailwind CSS, turning ideas into intuitive digital experiences.
+              Hi, I am Preeti Dalai. I am a Frontend Developer and UI/UX Designer with hands-on experience building responsive, user-friendly websites and web applications.
+
               </p>
               <p className="text-muted-foreground leading-relaxed">
-              My strength lies in writing maintainable code, designing intuitive interfaces, and delivering fast, engaging solutions that drive business growth. While AI is reshaping frontend development and UI design, I leverage it smartly—using AI tools to accelerate workflows, refine ideas, and enhance efficiency. More importantly, I fine-tune and correct AI-generated code to align perfectly with client needs, ensuring precision and customization.
+             During my freelancing experience, I have worked with Figma, HTML, CSS, JavaScript, React, and Next.js to develop and maintain real-world projects. I’ve built reusable React components, improved page performance, and collaborated with teams to translate designs into functional interfaces. I’ve also handled live website updates and UI improvements using HTML/CSS, ensuring better usability and accessibility.
               </p>
 
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Ready to collaborate on something extraordinary? Let’s build it together!
+            Curious, detail-oriented, and always learning, I stay ahead of tech and design trends to create impactful web experiences. Let’s build it together!
             </p>
 
             {/* Personal Info Grid */}
