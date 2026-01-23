@@ -62,18 +62,18 @@ export const projects = [
     },
     {
       id: 3,
-      title: 'Candle Business - landing page',
-      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
+      title: 'Furniture Business - Product page',
+      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of Furniture. 
       
       The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
-      images: [project3img1, project3img2, project3img3, project3img4],
+      images: [project5img1, project5img2, project5img3, project5img4, project5img5],
       tags: ['Figma'],
       keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
-      figma: 'https://www.figma.com/design/ZEIAG073ARBlVzUSn3uk83/Untitled?node-id=0-1&p=f&t=Nf6G5uMDACbGcXpr-0',
+      figma: 'https://www.figma.com/design/6R79wQNPIkDRYJX7KOx3Fd/OUR-PROJECT-1?node-id=285-3&t=z27xg5ugqmBW5vhu-1',
       
       category: 'Web Design'
     },
-    {
+     {
       id: 4,
       title: 'Mancare - E-commerce UI',
       description: `My goal was to demonstrate advanced front-end capabilities and a focus on premium user experience.`,
@@ -86,17 +86,18 @@ export const projects = [
       githubUrl: 'https://github.com/PD203/Mancare-ecom-ui.git',
       category: ['Web Development, ', 'Web Design']
     },
+    
     {
       id: 5,
-      title: 'Furniture Business - Product page',
-      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of Furniture. 
+      title: 'Candle Business - landing page',
+      description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
       
       The design features a warm, earthy color palette, minimalist typography, and high-quality product imagery to enhance user engagement. The layout is clean and intuitive, guiding the user through the product offerings and brand story seamlessly.`,
-      images: [project5img1, project5img2, project5img3, project5img4, project5img5],
+      images: [project3img1, project3img2, project3img3, project3img4],
       tags: ['Figma'],
       keyFeatures: ['Aesthetically Pleasing Design', 'Minimalist Typography', 'High-Quality Imagery', 'Intuitive User Experience'],
-      figma: 'https://www.figma.com/design/6R79wQNPIkDRYJX7KOx3Fd/OUR-PROJECT-1?node-id=285-3&t=z27xg5ugqmBW5vhu-1',
+      figma: 'https://www.figma.com/design/ZEIAG073ARBlVzUSn3uk83/Untitled?node-id=0-1&p=f&t=Nf6G5uMDACbGcXpr-0',
       
       category: 'Web Design'
-    }
+    },
   ];

@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       label: 'Address',
-      value: 'Delhi, India',
+      value: 'Raipur, Chhattisgarh, India',
       href: '#'
     },
   ];

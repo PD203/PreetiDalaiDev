@@ -9,16 +9,10 @@ const ProjectsPage = () => {
       <Navigation />
       <main className="pt-10">
         {/* Hero Section */}
-        <section className="py-20 bg-primary text-text-light">
+        <section className="pt-20 pb-5 bg-primary text-text-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl font-bold mb-6">MY PROJECTS</h1>
             <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
-            <p className="text-xl text-text-light/90 max-w-3xl mx-auto leading-relaxed">
-              CREATIVE. PROFESSIONAL. ETHICAL.
-            </p>
-            <p className="text-lg text-text-light/80 max-w-3xl mx-auto mt-6">
-              Each project reflects my journey of blending creativity with technology.
-            </p>
           </div>
         </section>
 
@@ -48,9 +42,6 @@ const ProjectsPage = () => {
                   <div className="text-3xl font-bold text-primary">01</div>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-4">Frontend Development</h3>
-                <p className="text-muted-foreground">
-                  Scalable, high-performing web solutions tailored to your business needs.
-                </p>
               </div>
 
               <div className="text-center">
@@ -58,9 +49,6 @@ const ProjectsPage = () => {
                   <div className="text-3xl font-bold text-primary">02</div>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-4">UI/UX Design</h3>
-                <p className="text-muted-foreground">
-                  User-friendly, professional interfaces that enhance customer engagement.
-                </p>
               </div>
 
               

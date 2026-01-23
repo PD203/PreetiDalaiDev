@@ -19,18 +19,13 @@ const Skills = () => {
     {
       title: 'UI/UX Design',
       icon: <Palette size={40} />,
-      skills: ['Wireframing', 'Design Systems']
+      skills: ['Figma', 'Wireframing', 'Prototyping', 'Mockup Design']
     },
     {
       title: 'Web Technologies',
       icon: <Globe size={40} />,
       skills: ['Node.js', 'REST APIs']
     },
-    {
-      title: 'Backend & Database',
-      icon: <Database size={40} />,
-      skills: ['MongoDB', 'Firebase', 'Vercel']
-    }
   ];
 
   const techStack = [
@@ -41,11 +36,7 @@ const Skills = () => {
     { name: 'Figma', level: 75 },
     { name: 'GSAP', level: 60 },
     { name: 'Framer Motion', level: 60 },
-    { name: 'Three.Js', level: 50 },
-    { name: 'React Three Fiber', level: 50 },
-    { name: 'Socket Io', level: 50 },
     { name: 'Restful APIs', level: 50 },
-    { name: 'Express', level: 50 },
     { name: 'Node.js', level: 60 },
     { name: 'Git & Github', level: 50 }
   ];

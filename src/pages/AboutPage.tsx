@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-10 pb-5">
         <About />
         
         {/* Experience Timeline */}

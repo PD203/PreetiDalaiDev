@@ -80,7 +80,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-2 text-text-light/80">
               <p>preetidalai940@gmail.com</p>
-              <p>Delhi, India</p>
+              <p>Raipur, Chhattisgarh, India</p>
             </div>
           </div>
         </div>

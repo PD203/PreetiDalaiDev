@@ -6,7 +6,7 @@ import { Section } from '@/components/ui/section';
 
 const Projects = () => {
   return (
-    <Section id="projects" className="py-20 bg-background">
+    <Section id="projects" className="pt-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -28,9 +28,6 @@ const Projects = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">
-            Want to see more of my work?
-          </p>
           <Link to="/projects">
           <Button size="lg" variant="outline">
             View All Projects
