@@ -3,7 +3,6 @@ import project1img2 from '@/assets/project1/resu1.jpg';
 import project1img3 from '@/assets/project1/resu2.jpg';
 import project1img4 from '@/assets/project1/resu3.jpg';
 import project1img5 from '@/assets/project1/resuAuth.jpg';
-import project1video from '@/assets/project1/Resumate.mp4';
 
 import project2img1 from '@/assets/project2/project-2.jpg';
 import project2img2 from '@/assets/project2/p2(2).jpg';
@@ -38,10 +37,8 @@ import project6img2 from '@/assets/project6/p6(2).png';
 import project6img3 from '@/assets/project6/p6(3).png';
 import project6img4 from '@/assets/project6/p6(4).png';
 import project6img5 from '@/assets/project6/p6(5).png';
-import project6video from '@/assets/project6/assettracker.mp4';
 
 import project7img1 from "@/assets/project7/project-7.png";
-import project7video from "@/assets/project7/ersdashboard.mp4";
 
 import project8img1 from "@/assets/project8/project-8.png";
 import project8img2 from "@/assets/project8/p8(2).png";
@@ -54,7 +51,7 @@ export const projects = [
       title: 'Asset Tracker - Web App',
       description: `Asset tracker dashboard with mobile application UI. The goal was to create a comprehensive asset tracking solution that provides real-time visibility into asset location and status.`,
       images: [project6img1, project6img2, project6img3, project6img4, project6img5],
-      video: project6video,
+      video: 'https://res.cloudinary.com/dpfvh7e5x/video/upload/v1789474217/assettracker_zztwda.mp4',
       tags: ['React.js', 'Next.js', 'TypeScript', 'Figma'],
       keyFeatures: ['Real-time Tracking', 'Interactive Maps', 'Automated Alerts', 'Comprehensive Reporting'],
       category: ['Web Development, ', 'Web Design']
@@ -64,7 +61,7 @@ export const projects = [
       title: 'ERS Dashboard - Web App',
       description: `Emergency Response System (ERS) dashboard developed for Apollo to help command centre operators monitor and respond to SOS alerts triggered from IOT devices. The dashboard provides real-time alert notifications and location details, enabling operators to quickly assess emergencies and coordinate ambulance dispatch to the required location.`,
       images: [ project7img1],
-      video: project7video,
+      video: 'https://res.cloudinary.com/dpfvh7e5x/video/upload/v1789474279/ersdashboard_z3kyd6.mp4',
       tags: ['React.js', 'Next.js', 'TypeScript', 'Socket.io', 'Figma'],
       keyFeatures: ['Real-time Employee Tracking', 'Interactive Dashboards', 'Automated Reporting', 'Comprehensive Analytics'],
       category: ['Web Development, ', 'Web Design']
@@ -83,7 +80,7 @@ export const projects = [
       title: 'Resumate - AI resume analyzer',
       description: `Many qualified candidates get rejected automatically because Applicant Tracking Systems (ATS) filter resumes based on keywords, skills, and structure. Resumate solves this problem by analyzing your resume against the specific Job Title and Job Description you’re applying for. It provides an ATS score along with AI-powered feedback on missing skills, important keywords, and structural improvements. By following these suggestions, job seekers can optimize their resumes to meet ATS requirements, increasing their chances of getting shortlisted and landing interviews.`,
       images: [project1img1, project1img2, project1img3, project1img4, project1img5],
-      video: project1video,
+      video: 'https://res.cloudinary.com/dpfvh7e5x/video/upload/v1789474295/Resumate_dcw4ar.mp4',
       tags: ['React', 'vite', 'TypeScript', 'Tailwind CSS', 'Puter.js', 'Zustand'],
       keyFeatures: ['ATS Score Calculation', 'AI-Powered Feedback', 'Keyword Analysis', 'Structural Improvement Suggestions'],
       demoUrl: 'https://resumate-rosy.vercel.app/',
