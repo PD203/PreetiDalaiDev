@@ -11,7 +11,7 @@ const ProjectsPage = () => {
         {/* Hero Section */}
         <section className="pt-20 pb-5 bg-primary text-text-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-bold mb-6">MY PROJECTS</h1>
+            <h1 className="text-5xl font-bold mb-6">MY Work</h1>
             <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
           </div>
         </section>

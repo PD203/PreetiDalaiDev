@@ -33,9 +33,52 @@ import project5img3 from '@/assets/project5/p5(3).jpg';
 import project5img4 from '@/assets/project5/p5(4).jpg';
 import project5img5 from '@/assets/project5/p5(5).jpg';
 
+import project6img1 from '@/assets/project6/assettracker.mov';
+import project6img2 from '@/assets/project6/p6(2).png';
+import project6img3 from '@/assets/project6/p6(3).png';
+import project6img4 from '@/assets/project6/p6(4).png';
+import project6img5 from '@/assets/project6/p6(5).png';
+
+import project7img1 from "@/assets/project7/project-7.png";
+import project7video from "@/assets/project7/ersdashboard.mp4";
+
+import project8img1 from "@/assets/project8/project-8.png";
+import project8img2 from "@/assets/project8/p8(2).png";
+import project8img3 from "@/assets/project8/p8(3).png";
+import project8img4 from "@/assets/project8/p8(4).png";
+
 export const projects = [
-    {
+  {
       id: 1,
+      title: 'Asset Tracker - Web App',
+      description: `Asset tracker dashboard with mobile application UI. The goal was to create a comprehensive asset tracking solution that provides real-time visibility into asset location and status.`,
+      images: [project6img1, project6img2, project6img3, project6img4, project6img5],
+      video: project6img1,
+      tags: ['React.js', 'Next.js', 'TypeScript', 'Figma'],
+      keyFeatures: ['Real-time Tracking', 'Interactive Maps', 'Automated Alerts', 'Comprehensive Reporting'],
+      category: ['Web Development, ', 'Web Design']
+    },
+    {
+      id: 7,
+      title: 'ERS Dashboard - Web App',
+      description: `Emergency Response System (ERS) dashboard developed for Apollo to help command centre operators monitor and respond to SOS alerts triggered from IOT devices. The dashboard provides real-time alert notifications and location details, enabling operators to quickly assess emergencies and coordinate ambulance dispatch to the required location.`,
+      images: [ project7img1],
+      video: project7video,
+      tags: ['React.js', 'Next.js', 'TypeScript', 'Socket.io', 'Figma'],
+      keyFeatures: ['Real-time Employee Tracking', 'Interactive Dashboards', 'Automated Reporting', 'Comprehensive Analytics'],
+      category: ['Web Development, ', 'Web Design']
+    },
+    {
+      id: 8,
+      title: 'Mo Inspection - Mobile App UI',
+      description: `Mo Inspection is a mobile application designed to inspect and manage ambulances and their equipment. The app allows users to perform inspections, record findings, and generate reports on the condition of ambulances and their equipment. It provides a user-friendly interface for efficient inspection processes, ensuring that all necessary checks are completed accurately and promptly.`,
+      images: [project8img1, project8img2, project8img3, project8img4],
+      tags: ['Figma'],
+      keyFeatures: ['User-Friendly Interface', 'Efficient Inspection Processes', 'Accurate Record-Keeping', 'Comprehensive Reporting'],
+      category: 'Mobile App Design'
+    },
+    {
+      id: 2,
       title: 'Resumate - AI resume analyzer',
       description: `Many qualified candidates get rejected automatically because Applicant Tracking Systems (ATS) filter resumes based on keywords, skills, and structure. Resumate solves this problem by analyzing your resume against the specific Job Title and Job Description you’re applying for. It provides an ATS score along with AI-powered feedback on missing skills, important keywords, and structural improvements. By following these suggestions, job seekers can optimize their resumes to meet ATS requirements, increasing their chances of getting shortlisted and landing interviews.`,
       images: [project1img1, project1img2, project1img3, project1img4, project1img5],
@@ -47,7 +90,7 @@ export const projects = [
       category: 'Web Development'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Cosmos - Galaxy Website',
       description: `Cosmos is a rich, interactive, and beautifully designed 3D website for a fictional space exploration agency. It showcases the wonders of the universe through stunning visuals, smooth animations, and dynamic content fetched from the official NASA API. 
       
@@ -61,7 +104,7 @@ export const projects = [
       category: 'Web Development'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Furniture Business - Product page',
       description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of Furniture. 
       
@@ -74,7 +117,7 @@ export const projects = [
       category: 'Web Design'
     },
      {
-      id: 4,
+      id: 5,
       title: 'Mancare - E-commerce UI',
       description: `My goal was to demonstrate advanced front-end capabilities and a focus on premium user experience.`,
       images: [project4img1, project4img2, project4img3, project4img4, project4img5, project4img6],
@@ -88,7 +131,7 @@ export const projects = [
     },
     
     {
-      id: 5,
+      id: 6,
       title: 'Candle Business - landing page',
       description: `The goal was to create a visually calming and aesthetically pleasing interface that reflects the soothing nature of candles. 
       
@@ -100,4 +143,7 @@ export const projects = [
       
       category: 'Web Design'
     },
+
+    
+    
   ];

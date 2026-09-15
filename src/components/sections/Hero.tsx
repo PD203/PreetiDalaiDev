@@ -34,7 +34,7 @@ const Hero = () => {
                 <br />
                 <span className="text-accent">DALAI</span>
               </h1>
-              <p className="text-xl text-text-light/90 font-medium">FRONTEND DEVELOPER</p>
+              <p className="text-xl text-text-light/90 font-medium">UI/UX DEVELOPER</p>
             </motion.div>
 
             <motion.p
@@ -43,7 +43,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              In the world of AI, I harness its strength to craft code that perfectly matches client visions
+              
             </motion.p>
 
             {/* Buttons with stagger */}
@@ -99,7 +99,7 @@ const Hero = () => {
               {[ 
                 { icon: <Github size={20} />, href: "https://github.com/PD203" },
                 { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/preeti-dalai-06303b273/" },
-                { icon: <Mail size={20} />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=preetidalai940@gmail.com" }
+                { icon: <Mail size={20} />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=preetidalai558@gmail.com" }
               ].map((link, index) => (
                 <motion.a
                   key={index}

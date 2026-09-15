@@ -4,13 +4,13 @@ import { Section } from '@/components/ui/section';
 const About = () => {
   const personalInfo = [
     { label: 'Birthday', value: '20 October 2003' },
-    { label: 'Age', value: '22' },
+    { label: 'Age', value: '23' },
     { label: 'Nationality', value: 'Indian' },
     { label: 'Field of Study', value: 'computer science' },
     { label: 'Degree', value: 'Bachelor of Computer Applications' },
     { label: 'Freelance', value: 'Available' },
-    { label: 'Email', value: 'preetidalai940@gmail.com' },
-    { label: 'Address', value: 'Raipur, India' }
+    { label: 'Email', value: 'preetidalai558@gmail.com' },
+    { label: 'Address', value: 'Bhuvaneswar, India' }
   ];
 
   return (
@@ -29,23 +29,19 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-6">PREETI DALAI</h3>
             <p className="text-lg text-primary font-semibold mb-6 leading-relaxed">
-              FRONTEND DEVELOPER & UI/UX DESIGNER
+              UI/UX DEVELOPER
             </p>
 
             <div className="space-y-4 mb-8">
               <p className="text-muted-foreground leading-relaxed">
-              Hi, My name is Preeti Dalai. I am a Frontend Developer and UI/UX Designer with hands-on experience building responsive, user-friendly websites and web applications.
+              Hi, I’m Preeti Dalai, a UI/UX Developer focused on creating intuitive, engaging, and responsive digital experiences.
 
               </p>
               <p className="text-muted-foreground leading-relaxed">
-             During my freelancing experience, I have worked with Figma, HTML, CSS, JavaScript, React, and Next.js to develop and maintain real-world projects. I’ve built reusable React components, improved page performance, and collaborated with teams to translate designs into functional interfaces. I’ve also handled live website updates and UI improvements using HTML/CSS, ensuring better usability and accessibility.
+             I have experience working with Figma, HTML, CSS, JavaScript, React.js, Next.js, and TypeScript to design and develop modern web applications. My work involves creating UI/UX designs, building reusable components, developing responsive layouts, and continuously improving usability, accessibility, and overall user experience.
               </p>
-
             </div>
 
-            <p className="text-muted-foreground leading-relaxed mb-8">
-            Let’s build something great together!
-            </p>
 
             {/* Personal Info Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -11,7 +11,7 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            MY PROJECTS
+            MY WORK
           </h2>
           <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
