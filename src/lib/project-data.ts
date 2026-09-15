@@ -33,11 +33,12 @@ import project5img3 from '@/assets/project5/p5(3).jpg';
 import project5img4 from '@/assets/project5/p5(4).jpg';
 import project5img5 from '@/assets/project5/p5(5).jpg';
 
-import project6img1 from '@/assets/project6/assettracker.mp4';
+import project6img1 from '@/assets/project6/project-6.png';
 import project6img2 from '@/assets/project6/p6(2).png';
 import project6img3 from '@/assets/project6/p6(3).png';
 import project6img4 from '@/assets/project6/p6(4).png';
 import project6img5 from '@/assets/project6/p6(5).png';
+import project6video from '@/assets/project6/assettracker.mp4';
 
 import project7img1 from "@/assets/project7/project-7.png";
 import project7video from "@/assets/project7/ersdashboard.mp4";
@@ -53,7 +54,7 @@ export const projects = [
       title: 'Asset Tracker - Web App',
       description: `Asset tracker dashboard with mobile application UI. The goal was to create a comprehensive asset tracking solution that provides real-time visibility into asset location and status.`,
       images: [project6img1, project6img2, project6img3, project6img4, project6img5],
-      video: project6img1,
+      video: project6video,
       tags: ['React.js', 'Next.js', 'TypeScript', 'Figma'],
       keyFeatures: ['Real-time Tracking', 'Interactive Maps', 'Automated Alerts', 'Comprehensive Reporting'],
       category: ['Web Development, ', 'Web Design']
