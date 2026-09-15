@@ -25,7 +25,7 @@ import project4img3 from '@/assets/project4/p4(3).png';
 import project4img4 from '@/assets/project4/p4(4).png';
 import project4img5 from '@/assets/project4/p4(5).png';
 import project4img6 from '@/assets/project4/p4(6).png';
-import project4video from '@/assets/project4/mancare.mov';
+import project4video from '@/assets/project4/mancare.mp4';
 
 import project5img1 from '@/assets/project5/project-5.jpg';
 import project5img2 from '@/assets/project5/p5(2).jpg';
@@ -33,7 +33,7 @@ import project5img3 from '@/assets/project5/p5(3).jpg';
 import project5img4 from '@/assets/project5/p5(4).jpg';
 import project5img5 from '@/assets/project5/p5(5).jpg';
 
-import project6img1 from '@/assets/project6/assettracker.mov';
+import project6img1 from '@/assets/project6/assettracker.mp4';
 import project6img2 from '@/assets/project6/p6(2).png';
 import project6img3 from '@/assets/project6/p6(3).png';
 import project6img4 from '@/assets/project6/p6(4).png';
